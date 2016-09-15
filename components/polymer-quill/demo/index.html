@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>polymer-quill demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+
+    <link rel="import" href="../polymer-quill.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+      .centered {
+        max-width: 880px;
+      }
+      polymer-quill {
+        margin-bottom: 40px
+      }
+    </style>
+  </head>
+
+  <body unresolved>
+    <div class="vertical-section-container centered">
+      <h3>Full Toolbar, Show Results, Custom height (150px), Save as Deltas, Save every 1 second</h3>
+      <demo-snippet>
+        <template>
+          <style is="custom-style">
+            polymer-quill.full {
+              --polymer-quill-editor-height: 150px;
+            }
+          </style>
+          <polymer-quill
+            content='{"ops":[{"insert":"Hello World! - Store as Delta"},{"attributes":{"header":2},"insert":"\n"}]}'
+            class='full'
+            store-as="delta"
+            save-interval="1000"
+            toolbar-type="full"
+            show-results>
+          </polymer-quill>
+        </template>
+      </demo-snippet>
+
+      <h3>Standard Toolbar, Hide Results, Default height (100px), Save as HTML, Save every 2 seconds</h3>
+      <demo-snippet>
+        <template>
+          <polymer-quill
+            content="<h2>Hello World! - Store as HTML</h2>"
+            store-as="html">
+          </polymer-quill>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>

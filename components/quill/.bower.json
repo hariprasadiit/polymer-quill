@@ -1,0 +1,14 @@
+{
+  "name": "quill",
+  "_cacheHeaders": {
+    "ETag": "\"21e143c4df0951199fba595f67baf98d\"",
+    "Last-Modified": "Wed, 07 Sep 2016 22:33:56 GMT",
+    "Content-Length": "349607",
+    "Content-Type": "application/octet-stream",
+    "Content-Disposition": "attachment; filename=quill.tar.gz"
+  },
+  "_release": "e-tag:21e143c4d",
+  "_source": "https://github.com/quilljs/quill/releases/download/v1.0.3/quill.tar.gz",
+  "_target": "*",
+  "_originalSource": "https://github.com/quilljs/quill/releases/download/v1.0.3/quill.tar.gz"
+}
